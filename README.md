@@ -24,7 +24,7 @@ MySQL *mysql;
 
 // .m File
 mysql = [[MySQL alloc] init];
-if ([mysql connectTo:"SERVER" username:"USER" password:"PWD" database:"DATABASE"]){
+if ([mysql connectTo:@"SERVER" username:@"USER" password:@"PWD" database:@"DATABASE"]){
 
     [mysql runQuery:"SELECT * FROM test01 LIMIT 10"];
     NSArray *result = [mysql fetchResult];
