@@ -27,8 +27,9 @@
     return YES;
 }
 
-- (void)runQuery :(char*)query {
-    mysql_query(mysql_connection, query);
+- (void)runQuery :(NSString*)query {
+    const char* c_query = [query UTF8String];
+    mysql_query(mysql_connection, c_query);
 }
 
 - (NSArray*)fetchResult {

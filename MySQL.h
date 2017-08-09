@@ -16,7 +16,7 @@
     MYSQL_RES *mysql_result;
 }
 - (BOOL)connectTo :(NSString*)host username:(NSString*)username password:(NSString*)password database:(NSString*)database;
-- (void)runQuery :(char*)query;
+- (void)runQuery :(NSString*)query;
 - (NSArray*)fetchResult;
 - (void)close;
 @end
