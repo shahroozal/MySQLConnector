@@ -15,8 +15,13 @@
     return self;
 }
 
-- (BOOL)connectTo :(char*)host username:(char*)username password:(char*)password database:(char*)database {
-    mysql_connection = mysql_real_connect(&mysql, host, username, password, database, 0, 0, 0);
+- (BOOL)connectTo :(NSString*)host username:(NSString*)username password:(NSString*)password database:(NSString*)database {
+    const char* c_host = [host UTF8String];
+    const char* c_username = [host UTF8String];
+    const char* c_password = [host UTF8String];
+    const char* c_database = [host UTF8String];
+    
+    mysql_connection = mysql_real_connect(&mysql, c_host, c_username, c_password, c_database, 0, 0, 0);
     
     if (mysql_connection == NULL) return NO;
     return YES;

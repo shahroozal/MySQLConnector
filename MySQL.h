@@ -15,7 +15,7 @@
     MYSQL_ROW mysql_row;
     MYSQL_RES *mysql_result;
 }
-- (BOOL)connectTo :(char*)host username:(char*)username password:(char*)password database:(char*)database;
+- (BOOL)connectTo :(NSString*)host username:(NSString*)username password:(NSString*)password database:(NSString*)database;
 - (void)runQuery :(char*)query;
 - (NSArray*)fetchResult;
 - (void)close;
