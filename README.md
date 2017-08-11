@@ -1,10 +1,10 @@
 # MySQLConnector
 MySQL Connector for Objective-C
 
-To use this connector first you have to download MySQL Connector from [MySQL Official Homepage](https://dev.mysql.com/downloads/connector/cpp/).
+To use this connector first you have to download MySQL Connector from [MySQL Official Homepage](https://dev.mysql.com/downloads/connector/c/).
 
 ## Installing
-1) Unzip **Connector/CPP** and move the content to **/usr/local/mysql**
+1) Unzip **Connector/C** and move the content to **/usr/local/mysql**
 2) Copy **libmysqlclient.18.dylib** from **/usr/local/mysql/lib** to **/usr/local/**
 3) In X-Code under **Build Settings** find **Header Search Paths** and add **/usr/local/mysql/include**
 4) Find **Library Search Paths** and add **/usr/local/mysql/lib**
